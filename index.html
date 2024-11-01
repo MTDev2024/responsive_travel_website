@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <title>Document</title>
@@ -16,7 +16,7 @@
                 Travel
             </a>
 
-            <div class="nav__menu" id="nav--menu">
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#home" class="nav__link">Home</a>
@@ -36,12 +36,12 @@
                 </ul>
 
                 <!--close button-->
-                <div class="nav__close" id="nav--close">
+                <div class="nav__close" id="nav-close">
                     <i class="ri-close-line"></i>
                 </div>
             </div>
             <!--toggle button-->
-            <div class="nav__toggle" id="nav--toggle">
+            <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-fill"></i>
             </div>
         </nav>
@@ -49,7 +49,80 @@
 
     <!--Main-->
     <main class="main">
+        <section class="home section" id="home">
+            <img src="assets/img/home-bg.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
 
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home__subtitle">
+                        Welcome to Travel
+                    </h3>
+
+                    <h1 class="home__title">
+                        Explore <br>
+                        The World
+                    </h1>
+
+                    <p class="home__description">
+                        Live the trips exploring the world, discover paradises, islands, mountains and much more, get your trip now.
+                    </p>
+
+                    <a href="#" class="button">Start your journey <i class="ri-arrow-right-line"></i> </a>
+                </div>
+
+                <div class="home__cards grid">
+                    <article class="home__card">
+                        <img src="assets/img/home-trees.jpg" alt="home" class="home__card-img">
+                        <h3 class="home__card-title">Croatia</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+                    <article class="home__card">
+                        <img src="assets/img/home-lake.jpg" alt="home" class="home__card-img">
+                        <h3 class="home__card-title">Iceland</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+                    <article class="home__card">
+                        <img src="assets/img/home-mountain.jpg" alt="home" class="home__card-img">
+                        <h3 class="home__card-title">Italy</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+                    <article class="home__card">
+                        <img src="assets/img/home-beach.jpg" alt="home" class="home__card-img">
+                        <h3 class="home__card-title">Spain</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">
+                        Learn more <br>
+                        about travel
+                    </h2>
+
+                    <p class="about__description">
+                        All the trips around the worl are a great pleasure and happiness for anyone, enjoy the sights when you travel the world. Travel safely and without worries, get your trip and explore the paradises of the world.
+                    </p>
+
+                    <a href="#" class="button">
+                        Explore Travel <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="about__image">
+                    <img src="assets/img/about-beach.jpg" alt="about image" class="about__img">
+                    <div class="about__shadow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular section" id="popular"></section>
+        
+        <section class="explore section" id="explore"></section>
     </main>
 
     <!--Footer-->
@@ -58,5 +131,8 @@
     </footer>
     <!--Scroll Up-->
     <!--Scroll Reveal-->
+
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
