@@ -1,56 +1,62 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById("nav-menu"),
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
 
-
-      /*Menu Show*/
+/*Menu Show*/
 /* validate if constant exists*/
-if(navToggle){
-    navToggle.addEventListener('click',() => {
-        navMenu.classList.add('show-menu')
-    })
-  }
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-menu");
+  });
+}
 
-    /*Menu Hidden*/
+/*Menu Hidden*/
 /* validate if constant exists*/
-if(navClose){
-    navClose.addEventListener('click',() => {
-        navMenu.classList.remove('show-menu')
-    })
-  }
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  });
+}
 
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('nav__link')
+const navLink = document.querySelectorAll("nav__link");
 
 const linkAction = () => {
-    const navMenu = document.getElementById('nav-menu')
-    //remove "show-menu" class when click on nav__link
-    navMenu.classList.remove('show-menu')
-}
+  const navMenu = document.getElementById("nav-menu");
+  //remove "show-menu" class when click on nav__link
+  navMenu.classList.remove("show-menu");
+};
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-// Change Header BG 
+// Change Header BG
 
 const scrollHeader = () => {
-    const header = document.getElementById('header')
-}
+  const header = document.getElementById("header");
+};
 
 /*=============== ADD BLUR TO HEADER ===============*/
 const blurHeader = () => {
-    const header = document.getElementById('header')
-    // when the scroll is greater than 50vh, add the blur-header class to te header tag
-    this.scrollY >= 50 ? header.classList.add('blur-header')
-                       : header.classList.remove('blur-header')
-    }  
+  const header = document.getElementById("header");
+  // when the scroll is greater than 50vh, add the blur-header class to te header tag
+  this.scrollY >= 50
+    ? header.classList.add("blur-header")
+    : header.classList.remove("blur-header");
+};
 
-window.addEventListener('scroll', blurHeader)   
+window.addEventListener("scroll", blurHeader);
 
-/*=============== SHOW SCROLL UP ===============*/ 
-
+/*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+  const scrollUp = document.getElementById("scroll-up");
+  //when the scroll is higher than 350vh, add the show-scroll class to the a tag with the scrollup classs
+  this.scrollY >= 350
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
