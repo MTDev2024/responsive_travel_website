@@ -440,6 +440,35 @@ img {
 }
 
 /*=============== EXPLORE ===============*/
+.explore {
+  position: relative;
+}
+
+.explore__image {
+  position: absolute;
+  overflow: hidden;
+}
+
+.explore__img {
+  width: 100%;
+  height: 333px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.explore__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+    hsl(0, 0%, 0%) 5%,
+    hsla(0, 0%, 0%, 0) 40%,
+    hsla(0, 0%, 0%, 0) 60%,
+    hsl(0, 0%, 0%) 92%);
+}
+
 .explore__content {
   position: relative;
   padding-top: 16rem;
